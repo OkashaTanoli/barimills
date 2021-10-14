@@ -1,0 +1,798 @@
+@font-face {
+    font-family: 'okasha';
+    src: url(../../fonts/NotoSansSC-Black.otf)
+}
+@font-face {
+    font-family: 'aijaz';
+    src: url(../../fonts/NotoSansSC-Regular.otf)
+}
+.sliderDownVideo{
+    background-image: radial-gradient(rgb(255, 255, 255),  rgb(235, 235, 235),rgb(80, 70, 70));
+}
+.mainDiv{
+    position: relative;
+    height: 100%;
+}
+.popUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000ea;
+    z-index: 10;
+}
+.popUpDiv{
+    width: 400px;
+    padding:50px;
+    background-color: #868686;
+    border-radius: 20px;
+    position: relative;
+
+}
+.popUpFirstBtn,.popUpSecondBtn{
+    font-size: 18px;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+    padding: 20px 60px;
+    background-color: #e0e0e0;
+    position: relative;
+    cursor:  pointer ;
+
+}
+.popUpFirstBtn{
+    margin-bottom: 10px;
+}
+.popUpHead{
+    font-family: okasha;
+    line-height: 0px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: #271d18;
+    margin-top: 40px;
+}
+.popUpStyleDiv{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0px;
+    background-color: #755847;
+    transition-property: all;
+    transition-duration: .3s;
+    
+}
+.popUpFirstBtn:hover .popUpStyleDiv{
+    width: 10px ; 
+}
+.popUpSecondBtn:hover .popUpStyleDiv{
+    width: 10px; 
+}
+.popUpDivCrossBtn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 1px 1px 5px rgb(39, 39, 39);
+}
+.logo{
+    display: flex;
+    justify-content: left;
+    width: 200px;
+}
+.logoImage{
+    margin-left: 30px;
+}
+.menuBtn{
+    height: 100%;
+    width: 100px;
+    background-color: rgb(129, 129, 129,0.2);
+    display: none;
+    justify-content: center;
+    align-items:center ;
+}
+.menuIcon{
+    color: rgb(78, 78, 78);
+}
+.menu{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(88, 88, 88);
+}
+
+.not-active{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left:20px;
+    padding-right:20px;
+    cursor: pointer;
+    position: relative;
+    transition-property: all;
+    transition-duration:.3s ;
+    text-decoration:none;
+    color: gray;
+}
+.social{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 100px; */
+}
+.socialIcons{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchIcon{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    height: 100%;
+    transition-property: all;
+    transition-duration: .2s;
+}
+.searchIcon:hover{
+    background-color: rgb(144, 144, 144);
+}
+.searchIcon:hover .searching{
+    color: white;
+}
+.icons{
+    color: rgb(144, 144, 144);
+    cursor: pointer;
+}
+.icons:hover{
+    color: #755847;
+    transition-property: all;
+    transition-duration: .2s;
+}
+.searching{
+    transition-property: all;
+    transition-duration: .2s;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.not-active:hover{
+    background-color: #e0e0e0;
+    color:#755847
+}
+.not-active:hover .activeBorder{
+    height: 6px;
+}
+.sub-menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 400px;
+    height:0px;
+    overflow:hidden;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.showing:hover .sub-menu{
+    height: 600px;
+}
+.activeBorder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #755847;
+    height: 0px;
+    width: 100%;
+    transition-property: all;
+    transition-duration:.5s ;
+}
+.sub{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 40px;
+    margin-bottom: 3px;
+    color: rgb(88, 88, 88);
+    background-color: #e0e0e0;
+    position: relative;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .3s;
+
+}
+
+.onHoverShow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-color: #755847;
+}
+.sub:hover{
+    background-color: rgb(144, 144, 144);
+    color: white;
+}
+.sub:hover .onHoverShow{
+    width: 5px;
+}
+.bathCollection{
+    width: 100%;
+    background-color: #755847;
+    display: flex;
+    justify-content: space-between;
+    /* height: 756px; */
+    overflow: hidden;
+
+}
+
+.firstDivBathColl{
+    width: 60%;
+    height: 100%;
+    /* background-color: tomato; */
+}
+
+.secondDivBathColl{
+    width: 40%;
+
+}
+.bathCollTextDiv{
+    background-color: #ebebeb;
+    padding: 1px 0px 0px 50px;
+}
+.options{
+    display: flex;
+    cursor: pointer;
+    /* overflow: scroll; */
+    /* justify-content: center; */
+}
+.options div{
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.active{
+    border-bottom: 5px solid #755847;
+
+}
+.textDiv{
+    background-color:  #755847;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-bottom: 60px;
+}
+.texting{
+    color: white;
+    font-size: 15px;
+    font-family: aijaz;
+    line-height: 30px;
+}
+.exploreBtn{
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    width: 130px;
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.exploreBtn:hover{
+    background-color: #ebebeb;
+    color: black;
+}
+
+.bedCollection{
+    width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    /* height: 756px; */
+    overflow: hidden;
+
+}
+.secondDivBedColl{
+    width: 50%;
+}
+.firstDivBedColl{
+    width: 50%;
+    height: 100%;
+    /* background-color: tomato; */
+}
+.bedCollTextDiv{
+    background-color: #755847;
+    padding: 1px 0px 0px 50px;
+}
+.optionsBed{
+    display: flex;
+    cursor: pointer;
+    /* justify-content: center; */
+}
+.optionsBed div{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+.textDivBed{
+    background-color:  #ebebeb;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-bottom: 60px;
+}
+.textingBed{
+    color: rgb(80, 80, 80);
+    font-size: 18px;
+    font-family: aijaz;
+    line-height: 30px;
+}
+.exploreBtnBed{
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 130px;
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.exploreBtnBed:hover{
+    background-color: #755847;
+    color: white;
+}
+.activeBed{
+    border-bottom: 10px solid #ffffff;
+}
+
+
+
+.sus,.res{
+    display: flex;
+    width: 100%;
+    background-color: #755847;
+    margin-top: 50px;
+}
+.susFirstDiv{
+    width: 50%;
+}
+
+.susSecondDiv{
+    width: 50%;
+    background-color: #755847;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.susText{
+    color: rgb(251, 251, 251);
+    font-size: 18px;
+    font-family: aijaz;
+    line-height: 30px;
+    /* margin-top: -30px; */
+}
+
+.knowBtn{
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 130px;
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .5s;
+    margin-bottom: 30px;
+}
+.knowBtn:hover{
+    background-color: #ebebeb;
+    color: black;
+}
+
+.socialLastDiv{
+    display: flex;
+    justify-content: center;
+}
+.socialLastText{
+    font-size: 80px;
+    font-weight: 900;
+    color: rgb(70, 70, 70);
+    font-family: okasha;
+    text-align: center;
+}
+.socialLastDivIcons{
+    margin-top: -40px;
+}
+.socialLastDivIcons div{
+    padding: 30px;
+    border: 1px solid gray;
+}
+.socialLastDivIcons div:hover{
+    border: 1px solid gray;
+    background-color: #755847;
+}
+.socialLastDivIcons div:hover .iconsLast{
+    color: white;
+}
+.iconsLast{
+    color: rgb(144, 144, 144);
+    
+}
+
+
+
+
+
+.footer{
+    margin-top: 100px;
+    background-color: rgb(218, 218, 218);
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.footerText{
+    border-bottom:2px solid transparent ;
+    padding-bottom: 10px;
+    transition-property: all;
+    transition-duration: .5s;
+    font-weight: 500;
+}
+
+
+.footerText:hover{
+    color: #755847 !important;
+    cursor: pointer;
+    border-bottom: 2px solid #755847;
+}
+.emailIcon{
+    color: rgb(184, 182, 182);
+    width: 10%;
+}
+.emailDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emailMainDiv{
+
+    width: 700px;
+    padding: 16px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    /* border-radius: 40px; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.inputEmail{
+    border: none;
+    width: 80%;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.inputEmail:focus{
+    outline: none;
+}
+
+.subscribeBtn{
+    transition-property: all !important;
+    transition-duration: .5s !important;
+    cursor: pointer;
+}
+
+.subscribeBtn:hover{
+    background-color: #755847 !important;
+
+}
+.terryTowelDivs{
+    transition-property: all;
+    transition-duration: .2s;
+}
+
+.terryTowelSub:hover{
+    height: 190px !important;
+
+}
+.kitchenTowelSub:hover{
+    height: 240px !important;
+
+}
+.terryTowelDivs:hover{
+    background-color: #e0e0e0 ;
+    color:rgb(63, 63, 63)
+}
+
+
+
+
+
+@media(max-width:1360px){
+    .social{
+        justify-content: flex-end;
+    }
+    .socialIcons{
+        display: none;
+    }
+}
+@media(max-width:1330px){
+    .options div,.optionsBed div{
+        margin-left: 15px;
+        font-size: 13px;
+        font-weight: 600;
+
+    }
+    #bath{
+        font-size: 65px !important;
+    }
+    #collection{
+        font-size: 65px !important;
+        /* margin-top: 50px !important; */
+    }
+    #bathLastFirstPage{
+        font-size: 50px !important;
+    }
+    #collectionLastFirstPage{
+        font-size: 50px !important;
+    }
+    .textDiv,.textDivBed{
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .texting,.textingBed{
+        font-size: 13px;
+        font-family: aijaz;
+    }
+    .exploreBtn,.exploreBtnBed,.knowBtn{
+        padding: 15px;
+        border-radius: 30px;
+        width: 100px;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    .susText{
+        color: rgb(251, 251, 251);
+        font-size: 15px;
+        line-height: 30px;
+        /* margin-top: -30px; */
+    }
+    .indiviTextMedia{
+        font-size: 17px !important;
+    }
+
+}
+
+@media(max-width:1225px){
+    .bathCollection{
+        width: 100%;
+        background-color: transparent;
+        display: block;
+        overflow: hidden;
+    }
+    .firstDivBathColl{
+        width: 100%;
+        height: 100%;
+        /* background-color: tomato; */
+    }
+    
+    .secondDivBathColl{
+        width: 100%;
+    }
+
+
+    .bedCollection{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        /* height: 756px; */
+        overflow: hidden;
+    
+    }
+    .secondDivBedColl{
+        width: 100%;
+    }
+    .firstDivBedColl{
+        width: 100%;
+        height: 100%;
+        /* background-color: tomato; */
+    }
+    .sus{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+    .res{
+        display: block;
+        width: 100%;
+        background-color: #755847;
+        margin-top: 50px;
+    }
+    .susFirstDiv{
+        width: 100%;
+    }
+    .susSecondDiv{
+        width: 100%;
+        background-color: #755847;
+        height: 100%;
+    }
+
+}
+
+@media(max-width:1140px){
+    .menu{
+        display: none;
+    }
+    .menuBtn{
+        display: flex;
+        margin-right: 50px;
+    }
+    .logo{
+        width: 300px;
+    }
+    .searchIcon{
+        width: 100px;
+        background-color: transparent;
+    }
+}
+@media(max-width:1050px){
+    .energyCon{
+        width: 100%;
+    }
+    .energyMainContainer{
+        width: 100%;
+        display: block;
+        margin-top: 100px;
+        height: 500px;
+        overflow: scroll;
+    } 
+    .individualDiv{
+        width: 60%;
+        margin: 0 auto;
+        height: 300px;
+        border: 1px solid rgb(197, 197, 197);
+        /* border-bottom: 1px solid rgb(116, 116, 116);
+        border-left: 1px solid rgb(116, 116, 116); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px !important;
+    }
+    .indiviTextMedia{
+        font-size: 22px !important;
+    }
+    .ourSusInitiativeFirstDiv{
+        width: 90%;
+        margin-top: 100px !important;
+    }
+    .ourSusInitiativeText{
+        font-size: 16px;
+    }
+    .certificate{
+        font-size: 70px !important;
+    }
+    .certDiv{
+        margin-top: 60px !important;
+    }
+    .emailDiv{
+        padding: 0 10px !important;
+    }
+      
+}
+
+@media(max-width:600px){
+    .videoPopUpDiv{
+        width: 90% !important;
+    }
+    #bath{
+        font-size: 50px !important;
+    }
+    #collection{
+        font-size: 50px !important;
+        /* margin-top: -55px !important; */
+    }
+    #bathLastFirstPage{
+        font-size: 30px !important;
+    }
+    #collectionLastFirstPage{
+        font-size: 30px !important;
+    }
+    .bathCollection{
+
+        justify-content: space-between;
+        /* height: 756px; */
+        overflow: hidden;
+    
+    }
+    .bathCollTextDiv{
+        background-color: #ebebeb;
+        padding: 1px 0px 0px 10px;
+    }
+    .bedCollTextDiv{
+        padding: 1px 0px 0px 10px;
+    }
+    .options,.optionsBed{
+        display: block;
+    }
+    .options div,.optionsBed div{
+        margin-left: 0px;
+        font-size: 14px;
+        font-weight: 700;
+        padding-bottom: 3px;
+        margin-top: 15px;
+        width: 150px;
+    }
+    .textDivBed,.textDiv{
+        padding-left: 10px;
+    }
+    .textingBed,.texting{
+        font-size: 15px;
+    }
+    .logo{
+        display: flex;
+        justify-content: left;
+        width: 200px;
+    }
+    .logoImage{
+        margin-left: 0px;
+        width: 70px !important;
+    }
+    .menuBtn{
+        height: 75px;
+        width: 70px;
+
+    }
+    #susText{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .certificate{
+        font-size: 40px !important;
+    }
+    .certDiv{
+        margin-top: 50px !important;
+    }
+    .socialLastDivIcons div{
+        padding: 10px;
+        border: 1px solid gray;
+        margin-left: 5px;
+    }
+    .socialLastText{
+        font-size: 40px;
+        
+    }
+    .socialLastDivIcons{
+        margin-top: -20px;
+    }
+      
+}

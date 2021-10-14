@@ -1,0 +1,10 @@
+.certificateOne{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* background-color: aqua !important; */
+    height: 200px;
+}
+.certificateOne:focus{
+    outline: none;
+}

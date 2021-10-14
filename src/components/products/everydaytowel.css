@@ -1,0 +1,294 @@
+.everyDayTowelHead{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.everyDayTowelHeadFirstDiv{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.everyDayTowelHeadSecondDiv{
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+
+}
+.everyDayTowelHeadSecondDiv img {
+    transition-property: all;
+    transition-duration: 1s;
+}
+.everyDayTowelHeadSecondDiv img:hover{
+    transform: scale(1.4);
+}
+
+/* .everyDayTowelHeadSecondDivHoverShow{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} */
+/* .everyDayTowelHeadSecondDivHoverShowDiv{
+    display: none !important;
+    background-color: rgba(255,255,255,0.7);
+    width:90%;
+    height:90%;
+    display:flex;
+    justify-content:center;
+    align-items:center
+} */
+/* .everyDayTowelHeadSecondDivHoverShow:hover .everyDayTowelHeadSecondDivHoverShowDiv{
+   display: flex !important;
+} */
+.everyDayTowelEveryDayTowel{
+    font-size: 70px;
+    color: #755847;
+    font-weight: 700;
+    font-family: okasha;
+    line-height: 40px;
+}
+.everyDayTowelCollection{
+    font-size: 70px;
+    color: #424242;
+    font-weight: 700;
+    font-family: okasha;  
+    line-height: 0px; 
+    margin-top: -10px;
+}
+.everyDayTowelText{
+    color: rgb(77, 77, 77);
+    font-family: aijaz;
+    font-size: 19px;
+    width: 600px;
+}
+.everyDayTowelEveryDayTowelCollection{
+    margin-top: -30px;
+}
+/* .buyNowBtnDiv{
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+} */
+/* .buyNowBtn{
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    width: auto;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: #755847;
+    transition-property: all;
+    transition-duration: .3s;
+} */
+/* .buyNowBtn:hover{
+    color: rgb(255, 255, 255);
+    background-color: #424242;
+} */
+
+.imagesMainDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.imagesMainDinFirstDiv{
+    width: 40%;
+    margin-right: 50px;
+    position: relative;
+    overflow: hidden;
+
+}
+.imagesMainDinFirstDiv img {
+    transition-property: all;
+    transition-duration: 1s;
+    height: 100% !important;
+}
+.imagesMainDinFirstDiv img:hover{
+    transform: scale(1.4);
+}
+.imagesMainDinSecondDiv img {
+    transition-property: all;
+    transition-duration: 1s;
+}
+.imagesMainDinSecondDiv img:hover{
+    transform: scale(1.4);
+}
+.imagesMainDinSecondDiv{
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.interestedFormDiv{
+    width: 900px;
+    margin: 90px auto;
+    /* background-color: orange; */
+    /* padding: 30px; */
+}
+.formDiv{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    /* background-color: oldlace; */
+}
+.inputFieldDiv{
+    width: 48%;
+    padding-left: 10px;
+    background-color: rgb(231, 231, 231);
+}
+.inputField{
+    width: 100%;
+    border: none;
+    padding: 22px 0px;
+    background-color: rgb(231, 231, 231);
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+    font-family: aijaz;
+
+    
+}
+.inputField:focus{
+    outline: none;
+}
+.submitBtn{
+    padding: 20px 70px ;
+    color: white;
+    font-size: 16px;
+    font-family: aijaz;
+    background-color: #755847;
+    border-radius: 40px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.submitBtn:hover{
+    background-color: #424242;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1400px){
+    .everyDayTowelEveryDayTowel{
+        font-size: 60px;
+        color: #755847;
+        font-weight: 700;
+        font-family: okasha;
+        line-height: 40px;
+    }
+    .everyDayTowelCollection{
+        font-size: 60px;
+        color: #424242;
+        font-weight: 700;
+        font-family: okasha;  
+        line-height: 0px; 
+    }
+    .everyDayTowelText{
+
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:1180px){
+    .everyDayTowelEveryDayTowel{
+        font-size: 40px !important;
+        color: #755847;
+        font-weight: 700;
+        font-family: okasha;
+        line-height: 40px;
+    }
+    .everyDayTowelCollection{
+        font-size: 40px;
+        color: #424242;
+        font-weight: 700;
+        font-family: okasha;  
+        line-height: 0px; 
+    }
+    .everyDayTowelText{
+        font-size: 16px;
+    }
+    .productsEveryDayTowel{
+        font-size: 14px !important;
+        margin-top: 1px !important;
+    }
+}
+
+
+@media(max-width:1000px){
+    .inputField{
+        width: 100% !important;
+      
+    }
+    .formDiv{
+        display: block;
+        margin-top: 0px;
+    }
+    .interestedFormDiv{
+        width: 90% !important;
+        margin: 0 auto;
+    }
+    .inputFieldDiv{
+        margin-top: 20px;
+        width: 98% !important;
+    }
+    .productsEveryDayTowel{
+        font-size: 13px !important;
+        margin-top: 1px !important;
+    }
+}
+
+@media(max-width:950px){
+    .everyDayTowelHead{
+        display: block;
+    }
+    .everyDayTowelHeadFirstDiv{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: 0 0px 30px 10px;
+    }
+    .everyDayTowelHeadSecondDiv{
+        width: 100%;
+    }
+    
+
+    .imagesMainDiv{
+        display: block;
+        margin-top: 0px;
+    }
+    .imagesMainDinFirstDiv{
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 5px;
+    }
+    .imagesMainDinSecondDiv{
+        width: 100%;
+        margin-top: 5px;
+    
+    }
+    .inputField{
+
+        padding: 12px 0px;
+        font-size: 16px ;
+    }
+}

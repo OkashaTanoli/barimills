@@ -1,0 +1,133 @@
+.rsponsiveHead{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.247);
+    width: 100%;
+    /* height: 100vh; */
+    z-index: 10;
+    transition-property: all;
+    transition-duration: .5s;
+    /* padding-left: 20px; */
+}
+.responsiveMenu{
+    background-color: rgb(224, 224, 218);
+    width: 500px;
+    overflow-x: auto;
+    padding-left: 40px;
+    height: 100vh;
+}
+.crossIconDiv{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin-bottom: 30px;
+}
+.crossIcon{
+    color: rgb(65, 65, 65);
+}
+.responsiveMenuItem{
+    width: 100%;
+    /* padding-left: 20px; */
+    font-size: 15px;
+    padding: 30px 0px;
+    border-bottom: 1px solid gray;
+    font-weight: 500;
+    color: gray;
+    /* background-color: rgb(226, 226, 226); */
+}
+.responsiveMenuItemAbout{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 70px;
+    font-weight: 400;
+    color: gray;
+    /* background-color: white; */
+}
+.aboutComplete{
+    /* height: 81px; */
+    transition-property: all;
+    transition-duration: .5s;
+    overflow: hidden;
+}
+.last{
+    border-bottom: 1px solid gray;
+}
+
+.searchInput{
+    border-bottom:5px solid #755847 !important;
+    background-color: transparent;
+    border:none;
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    padding-left: 40px;
+}
+.searchInput:focus{
+    outline: none;
+}
+.searchBarDiv{
+    transition-property: all;
+    transition-duration: .5s;  
+    overflow: hidden;
+}
+
+.responsiveTerryTowel{
+    margin-bottom: -10px;
+}
+.swipeToSlideMid{
+    display: none;
+}
+.swipeToSlideSmall{
+    display: none;
+}
+
+
+/* @media(max-width:1200px){
+    .swipeToSlideFull{
+        display: none;
+    }
+    .swipeToSlideMid{
+        display: block;
+    }
+    .swipeToSlideDiv{
+        margin-top: 40px !important;
+    }
+} */
+/* @media(max-width:780px){
+    .swipeToSlideSmall{
+        display: block;
+    }
+    .swipeToSlideMid{
+        display: none;
+    }
+    .swipeToSlideDiv{
+        margin-top: 30px !important;
+    }
+} */
+@media(max-width:600px){
+    .responsiveMenu{
+        width: 100%;
+    }
+    .popUpDiv{
+        width: 80%;
+        padding:40px 20px;
+    }
+    .popUpHead{
+        font-size: 25px;
+        letter-spacing: -1px;
+    }
+    .popUpFirstBtn{
+        padding: 15px 15px;
+    }
+    .popUpSecondBtn{
+        padding: 15px 15px;
+    }
+    /* .swipeToSlideDiv{
+        margin-top: 0px !important;
+    } */
+
+}

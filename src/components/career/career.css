@@ -1,0 +1,49 @@
+.vacanciesDiv{
+    margin-top: 90px;
+    width: 400px;
+    margin-left: 20px;
+
+}
+.vacanciesHead h1{
+    font-weight: 700;
+    font-size: 50px;
+    font-family: okasha;
+    color: #555555;
+}
+.allManagementNonManagement{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.allManagementNonManagementAll,.allManagementNonManagementNonManage,.allManagementNonManagementManage{
+    transition-property: all;
+    transition-duration: .15s;
+    padding: 10px 0px;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.allManagementNonManagementAll{
+    width: 14%;
+}
+.allManagementNonManagementNonManage{
+    width: 43%;
+
+}
+.allManagementNonManagementManage{
+    width: 38%;
+}
+@media(max-width:500px){
+    .vacanciesDiv{
+        margin-top: 90px;
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .allManagementNonManagement{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

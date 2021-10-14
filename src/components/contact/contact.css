@@ -1,0 +1,64 @@
+.contactUsHead{
+    font-size: 90px;
+    font-family: okasha;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+.contactUsHeadSecond{
+    margin-top: 40px;
+    font-size: 80px;
+    font-family: okasha;
+    /* display: flex;
+    justify-content: center; */
+    margin-bottom: 40px;
+    text-align: center;
+}
+.mapDiv{
+    margin: 0 auto;
+    width: 900px;
+
+}
+.locationAddress{
+    font-size: 19px;
+    font-family: aijaz;
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width:900px){
+    .mapDiv{
+        width: 100%;
+
+    }
+    
+}
+@media(max-width:700px){
+    .contactUsHead,.contactUsHeadSecond{
+        font-size: 60px;
+    }
+    
+    
+}
+@media(max-width:600px){
+    .infoBlockInMapDiv{
+        width: 95% !important;
+        margin: 30px auto !important;
+        position: relative !important; 
+        /* margin-bottom: 40px !important; */
+        right: 0 !important;
+        left: 0 !important;
+    }
+    .locationAddress{
+        font-size: 14px;
+
+    }
+}
+
+@media(max-width:500px){
+    .contactUsHead,.contactUsHeadSecond{
+        font-size: 30px;
+    }
+
+}
+
