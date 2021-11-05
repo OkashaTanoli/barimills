@@ -7,11 +7,11 @@ import Footer from '../smallcomponents/footer'
 import '../Main/main.css';
 import '../smallcomponents/responsive.css'
 import { Link } from "react-router-dom"
-import Image1 from '../../images/Bari Mills Website/Kitchen/1Fashion/8.jpg'
-import Image2 from '../../images/Bari Mills Website/Kitchen/1Fashion/9.jpg'
-import Image3 from '../../images/Bari Mills Website/Kitchen/1Fashion/10.jpg'
-import Image4 from '../../images/Bari Mills Website/Kitchen/1Fashion/11.jpg'
-import Image5 from '../../images/Bari Mills Website/Kitchen/1Fashion/12.jpg'
+import Image6 from '../../images/Bari Mills Website/Kitchen/1Fashion/13.jpg'
+import Image7 from '../../images/Bari Mills Website/Kitchen/1Fashion/17.jpg'
+import Image8 from '../../images/Bari Mills Website/Kitchen/1Fashion/18.jpg'
+import Image9 from '../../images/Bari Mills Website/Kitchen/1Fashion/19.jpg'
+import Image10 from '../../images/Bari Mills Website/Kitchen/1Fashion/20.jpg'
 
 function KitchenTowelFashion() {
 
@@ -64,23 +64,24 @@ function KitchenTowelFashion() {
                             </div>
                         </div>
                     </div> */}
-                    <img src={Image1} width='100%' className='firstImage' />
+                    <img src={Image10} width='100%' className='firstImage' />
+                </div>
+            </div>
+
+            <div className='imagesMainDiv'>
+                <div className='imagesMainDinFirstDiv'>
+                    <img src={Image6} width='100%' />
+                </div>
+                <div className='imagesMainDinSecondDiv'>
+                    <img src={Image7} width='100%' height='100%' />
                 </div>
             </div>
             <div className='imagesMainDiv'>
                 <div className='imagesMainDinFirstDiv'>
-                    <img src={Image2} width='100%' />
+                    <img src={Image8} width='100%' />
                 </div>
                 <div className='imagesMainDinSecondDiv'>
-                    <img src={Image3} width='100%' height='100%' />
-                </div>
-            </div>
-            <div className='imagesMainDiv'>
-                <div className='imagesMainDinFirstDiv'>
-                    <img src={Image4} width='100%' />
-                </div>
-                <div className='imagesMainDinSecondDiv'>
-                    <img src={Image5} width='100%' height='100%' />
+                    <img src={Image9} width='100%' height='100%' />
                 </div>
             </div>
 
