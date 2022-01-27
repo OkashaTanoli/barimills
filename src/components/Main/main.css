@@ -128,13 +128,13 @@
     color: gray;
 }
 .social{
-    width: 250px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     /* margin-left: 100px; */
 }
 .socialIcons{
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -290,7 +290,7 @@ function Header() {
                     </a>
                     <Link to='/sustainability' style={{ textDecoration: 'none' }}>
                         <div className='responsiveMenuItem'>
-                        SUSTAINABILITY
+                            SUSTAINABILITY
                         </div>
                     </Link>
                     <Link to='/contact' style={{ textDecoration: 'none' }}>
@@ -517,11 +517,19 @@ function Header() {
             </div>
             <div className='social'>
                 <div className='socialIcons'>
-                    <FaFacebookF size='17' className='icons' />
-                    <AiFillYoutube size='20' className='icons' />
-                    <AiOutlineTwitter size='20' className='icons' />
-                    <AiOutlineInstagram size='19' className='icons' />
-                    <FaLinkedinIn size='20' className='icons' />
+                    <a href="https://www.facebook.com/barimills.pk">
+                        <FaFacebookF size='17' className='icons' />
+                    </a>
+                    {/* <a href="">
+                        <AiFillYoutube size='20' className='icons' /><a href=""></a>
+                    </a> */}
+                    {/* <AiOutlineTwitter size='20' className='icons' /> */}
+                    <a href="https://www.instagram.com/bari.mills/?hl=en">
+                        <AiOutlineInstagram size='19' className='icons' />
+                    </a>
+                    <a href="https://www.linkedin.com/company/m-y-bari-mills-pvt-ltd/">
+                        <FaLinkedinIn size='20' className='icons' />
+                    </a>
                 </div>
                 <div onClick={() => { setSearch(true) }} className='searchIcon'>
                     <HiSearch size='22' className='searching' />

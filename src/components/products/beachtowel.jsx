@@ -6,13 +6,12 @@ import { GoChevronRight } from 'react-icons/go'
 import Image1 from '../../images/Bari Mills Website/Beach Towel/Beach Towels1.jpg'
 import Image2 from '../../images/Bari Mills Website/Beach Towel/Beach Towels2.jpg'
 import Image3 from '../../images/Bari Mills Website/Beach Towel/Beach Towels3.jpg'
-import Image4 from '../../images/Bari Mills Website/Beach Towel/Beach Towels4.jpg'
 import Image5 from '../../images/Bari Mills Website/Beach Towel/Beach Towels5.jpg'
 import Image6 from '../../images/Bari Mills Website/Beach Towel/Beach Towels6.jpg'
-import Image7 from '../../images/Bari Mills Website/Beach Towel/Beach Towels7.jpg'
-import Image8 from '../../images/Bari Mills Website/Beach Towel/Beach Towels8.jpg'
 import Image9 from '../../images/Bari Mills Website/Beach Towel/Beach Towels9.jpg'
 import Image10 from '../../images/Bari Mills Website/Beach Towel/Beach Towels10.jpg'
+import Image11 from '../../images/Bari Mills Website/Beach Towel/Beach Towels11.jpg'
+import Image12 from '../../images/Bari Mills Website/Beach Towel/Beach Towels12.jpg'
 import Footer from '../smallcomponents/footer'
 import '../Main/main.css';
 import '../smallcomponents/responsive.css'
@@ -76,7 +75,7 @@ function BeachTowel() {
             </div>
             <div className='imagesMainDiv'>
                 <div className='imagesMainDinFirstDiv'>
-                    <img src={Image4} width='100%' />
+                    <img src={Image11} width='100%' />
                 </div>
                 <div className='imagesMainDinSecondDiv'>
                     <img src={Image5} width='100%' height='100%' />
@@ -87,22 +86,22 @@ function BeachTowel() {
                     <img src={Image6} width='100%' />
                 </div>
                 <div className='imagesMainDinSecondDiv'>
-                    <img src={Image7} width='100%' height='100%' />
+                    <img src={Image12} width='100%' height='100%' />
                 </div>
             </div>
             <div className='imagesMainDiv'>
                 <div className='imagesMainDinFirstDiv'>
-                    <img src={Image8} width='100%' />
+                    <img src={Image9} width='100%' />
                 </div>
                 <div className='imagesMainDinSecondDiv'>
-                    <img src={Image9} width='100%' height='100%' />
+                    <img src={Image10} width='100%' height='100%' />
                 </div>
             </div>
-            <div className='imagesMainDiv'>
+            {/* <div className='imagesMainDiv'>
                 <div className='imagesMainDinFirstDiv'>
                     <img src={Image10} width='100%' />
                 </div>
-            </div>
+            </div> */}
             
             <Footer />
         </div>

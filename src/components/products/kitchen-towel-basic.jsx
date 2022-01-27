@@ -8,10 +8,13 @@ import '../Main/main.css';
 import '../smallcomponents/responsive.css'
 import { Link } from "react-router-dom"
 import Image6 from '../../images/Bari Mills Website/Kitchen/1Basic/21.jpg'
-import Image7 from '../../images/Bari Mills Website/Kitchen/1Basic/22.jpg'
+// import Image7 from '../../images/Bari Mills Website/Kitchen/1Basic/22.jpg'
 import Image8 from '../../images/Bari Mills Website/Kitchen/1Basic/23.jpg'
+import Image26 from '../../images/Bari Mills Website/Kitchen/1Basic/26.jpeg'
+import Image27 from '../../images/Bari Mills Website/Kitchen/1Basic/27.jpeg'
+import Image28 from '../../images/Bari Mills Website/Kitchen/1Basic/28.jpeg'
 import Image9 from '../../images/Bari Mills Website/Kitchen/1Basic/24.jpg'
-import Image10 from '../../images/Bari Mills Website/Kitchen/1Basic/25.jpg'
+// import Image10 from '../../images/Bari Mills Website/Kitchen/1Basic/25.jpg'
 
 function KitchenTowelBasic() {
 
@@ -70,10 +73,10 @@ function KitchenTowelBasic() {
             </div>
             <div className='imagesMainDiv'>
                 <div className='imagesMainDinFirstDiv'>
-                    <img src={Image10} width='100%' />
+                    <img src={Image26} width='100%' />
                 </div>
                 <div className='imagesMainDinSecondDiv'>
-                    <img src={Image7} width='100%' />
+                    <img src={Image27} width='100%' />
                 </div>
             </div>
             <div className='imagesMainDiv'>
@@ -82,6 +85,11 @@ function KitchenTowelBasic() {
                 </div>
                 <div className='imagesMainDinSecondDiv'>
                     <img src={Image9} width='100%' />
+                </div>
+            </div>
+            <div className='imagesMainDiv'>
+                <div className='imagesMainDinFirstDiv'>
+                    <img src={Image28} width='100%' />
                 </div>
             </div>
             

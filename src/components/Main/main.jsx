@@ -154,7 +154,7 @@ function Main() {
                     </div>
                 </div>
 
-                <Header  />
+                <Header />
                 <Cau />
                 {/* <div className='sliderDownVideo' style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '50px',position:'relative' }}>
                     <video style={{margin:'20px',boxShadow:'0px 0px 20px black',borderRadius:'10px'}} width="80%" height="70%" loop autoPlay muted >
@@ -215,7 +215,7 @@ function Main() {
 
                 <AllBusiness />
 
-               
+
 
 
 
@@ -279,11 +279,11 @@ function Main() {
                             <p className='socialLastText'>Social</p>
                         </div>
                         <div className='socialLastDivIcons' style={{ display: 'flex' }}>
-                            <div><FaFacebookF className='iconsLast' size='20' /> </div>
-                            <div><AiFillYoutube className='iconsLast' size='23' /></div>
-                            <div><AiOutlineTwitter className='iconsLast' size='23' /></div>
-                            <div><AiOutlineInstagram className='iconsLast' size='23' /></div>
-                            <div><FaLinkedinIn className='iconsLast' size='23' /></div>
+                            <a href="https://www.facebook.com/barimills.pk"><div><FaFacebookF className='iconsLast' size='23' /></div></a>
+                            {/* <div><AiFillYoutube className='iconsLast' size='23' /></div> */}
+                            {/* <div><AiOutlineTwitter className='iconsLast' size='23' /></div> */}
+                            <a href="https://www.instagram.com/bari.mills/?hl=en"><div><AiOutlineInstagram className='iconsLast' size='23' /></div></a>
+                            <a href="https://www.linkedin.com/company/m-y-bari-mills-pvt-ltd/"> <div><FaLinkedinIn className='iconsLast' size='23' /></div></a>
                         </div>
                     </div>
                 </div>
